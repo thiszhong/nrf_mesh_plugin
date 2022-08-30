@@ -6,5 +6,5 @@ analyzer:
     - lib/**/*.freezed.dart
 linter:
   rules:
-    # futures should be either awaited or clearly marked as unawaited
-    - unawaited_futures
+    no_leading_underscores_for_local_identifiers: false
+    unawaited_futures: true

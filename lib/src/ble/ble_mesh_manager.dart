@@ -15,7 +15,7 @@ import 'package:retry/retry.dart';
 /// It implements the methods to init GATT layer, subscribe to notifications and send PDUs for **BLE Mesh** nodes.
 /// {@endtemplate}
 class BleMeshManager<T extends BleMeshManagerCallbacks> extends BleManager<T> {
-  static late final BleMeshManager _instance = BleMeshManager._(FlutterReactiveBle());
+  static final BleMeshManager _instance = BleMeshManager._(FlutterReactiveBle());
 
   /// The list of [DiscoveredService] that were discovered during the last connection process
   late List<DiscoveredService> _discoveredServices;
